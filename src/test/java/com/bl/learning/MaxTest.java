@@ -16,5 +16,9 @@ public class MaxTest {
 		String result = MaximumTest.findMax(2, 3, 1);
 		Assert.assertEquals("3", result);
 	}
-	
+	@Test
+	public void GivenInteger_AtThirdPosition_ShouldReturnTrue(){
+		String result = MaximumTest.findMax(1, 2, 3);
+		Assert.assertEquals("3", result);
+	}
 }
