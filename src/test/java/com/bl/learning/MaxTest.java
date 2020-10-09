@@ -7,48 +7,48 @@ import org.junit.Assert;;
 public class MaxTest {
 	
 	@Test
-	public void GivenInteger_AtFirstPosition_ShouldReturnTrue(){
-		String result = MaximumTest.findMax(3, 2, 1);
+	public void GivenIntegerFirstPosition_UsingGenerics_ShouldReturnTrue(){
+		String result = MaximumTest.findMax(3,2,1);
 		Assert.assertEquals("3", result);
 	}
 	@Test
-	public void GivenInteger_AtSecondPosition_ShouldReturnTrue(){
-		String result = MaximumTest.findMax(2, 3, 1);
+	public void GivenIntegerSecondPosition_UsingGenerics_ShouldReturnTrue(){
+		String result = MaximumTest.findMax(2,3,1);
 		Assert.assertEquals("3", result);
 	}
 	@Test
-	public void GivenInteger_AtThirdPosition_ShouldReturnTrue(){
-		String result = MaximumTest.findMax(1, 2, 3);
+	public void GivenIntegerThirdPosition_UsingGenerics_ShouldReturnTrue(){
+		String result = MaximumTest.findMax(1,2,3);
 		Assert.assertEquals("3", result);
 	}
 	@Test
-	public void GivenFloat_AtFirstPosition_ShouldReturnTrue(){
-		String result = MaximumTest.findMaxFloat(3.0f,2.0f,1.0f);
+	public void GivenFloatFirstPosition_UsingGenerics_ShouldReturnTrue(){
+		String result = MaximumTest.findMax(3.0f,2.0f,1.0f);
 		Assert.assertEquals("3.0", result);
 	}
 	@Test
-	public void GivenFloat_AtSecondPosition_ShouldReturnTrue(){
-		String result = MaximumTest.findMaxFloat(2.0f, 3.0f, 1.0f);
+	public void GivenFloatSecondPosition_UsingGenerics_ShouldReturnTrue(){
+		String result = MaximumTest.findMax(2.0f,3.0f,1.0f);
 		Assert.assertEquals("3.0", result);
 	}
 	@Test
-	public void GivenFloat_AtThirdPosition_ShouldReturnTrue(){
-		String result = MaximumTest.findMaxFloat(1.0f, 2.0f, 3.0f);
+	public void GivenFloatThirdPosition_UsingGenerics_ShouldReturnTrue(){
+		String result = MaximumTest.findMax(1.0f,2.0f,3.0f);
 		Assert.assertEquals("3.0", result);
 	}
 	@Test
-	public void GivenString_AtFirstPosition_ShouldReturnTrue(){
-		String result = MaximumTest.findMaxString("Peach","Apple","Banana");
+	public void GivenStringFirstPosition_UsingGenerics_ShouldReturnTrue(){
+		String result = MaximumTest.findMax("Peach","Apple","Banana");
 		Assert.assertEquals("Peach", result);
 	}
 	@Test
-	public void GivenString_AtSecondPosition_ShouldReturnTrue(){
-		String result = MaximumTest.findMaxString("Apple","Peach","Banana");
+	public void GivenStringSecondPosition_UsingGenerics_ShouldReturnTrue(){
+		String result = MaximumTest.findMax("Apple","Peach","Banana");
 		Assert.assertEquals("Peach", result);
 	}
 	@Test
-	public void GivenString_AtThirdPosition_ShouldReturnTrue(){
-		String result = MaximumTest.findMaxString("Apple","Banana","Peach");
+	public void GivenStringThirdPosition_UsingGenerics_ShouldReturnTrue(){
+		String result = MaximumTest.findMax("Banana","Apple","Peach");
 		Assert.assertEquals("Peach", result);
 	}
 }
