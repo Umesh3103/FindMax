@@ -21,4 +21,9 @@ public class MaxTest {
 		String result = MaximumTest.findMax(1, 2, 3);
 		Assert.assertEquals("3", result);
 	}
+	@Test
+	public void GivenFloat_AtFirstPosition_ShouldReturnTrue(){
+		String result = MaximumTest.findMaxFloat(3.0f,2.0f,1.0f);
+		Assert.assertEquals("3.0", result);
+	}
 }
