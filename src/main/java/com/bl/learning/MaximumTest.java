@@ -29,8 +29,14 @@ public class MaximumTest<E extends Comparable<E>> {
 		if(elements.length!=0){
 			max=findOptional(max,elements);
 		}
+		printMax(max);
 		return ""+max;
 	}
+	
+	private static <E extends Comparable<E>> void printMax(E max) {
+		System.out.println(max);
+	}
+	
 	private static <E extends Comparable<E>> E findOptional(E max, E[] elements) {
 		for(E entry: elements){
 			if(entry.compareTo(max)>0){
