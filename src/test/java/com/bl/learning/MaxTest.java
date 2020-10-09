@@ -26,4 +26,9 @@ public class MaxTest {
 		String result = MaximumTest.findMaxFloat(3.0f,2.0f,1.0f);
 		Assert.assertEquals("3.0", result);
 	}
+	@Test
+	public void GivenFloat_AtSecondPosition_ShouldReturnTrue(){
+		String result = MaximumTest.findMaxFloat(2.0f, 3.0f, 1.0f);
+		Assert.assertEquals("3.0", result);
+	}
 }
